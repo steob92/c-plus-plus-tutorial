@@ -1,4 +1,4 @@
-# c-plus-plus-tutorial
+# C-plus-plus-tutorial
 C++ tutorial for TSI
 
 # Installing Compilers
@@ -40,12 +40,14 @@ conda install -c conda-forge gcc
 
 # Running examples with Docker
 You can use the [GCC](https://hub.docker.com/_/gcc_) image to compile and run these examples:
+
+
+To save time, I suggest you run this before the workshop
 ```bash
 docker pull gcc
 ```
 
 To set up an interactive container with the current directory:
 ```bash
-
 docker run -it --rm -v $(pwd):/data -w /data gcc bash
 ``````
