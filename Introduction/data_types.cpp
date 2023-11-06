@@ -4,20 +4,12 @@
 
 int main() {
 
-    // C++ is a "statically" typed language,
-    // meaning variable types are known at compile-time.
-    // Some of the standard data types include:
-
-    // int - 4-byte integer (minimum/maximum values):
-    // Minimum value: -2,147,483,648
-    // Maximum value: 2,147,483,647
-    int a = 43;
+        // int - 4-byte integer (minimum/maximum values):
+    int a = 42;
     std::cout << "integer a = " << a << std::endl;
-
-    // float - Single-precision floating-point value (32-bit precision)
-    // double - Double-precision floating-point value (64-bit precision)
-    // bool - Boolean (True/False)
-    // char - Character ('a', '7', '@', etc)
+    std::cout << "Minimum value for int: " << std::numeric_limits<int>::min() << std::endl;
+    std::cout << "Maximum value for int: " << std::numeric_limits<int>::max() << std::endl;
+    
 
     // Precision of float and double:
     std::cout.precision(20);
@@ -31,6 +23,7 @@ int main() {
     // Display minimum and maximum values for float and double:
     std::cout << "Minimum value for float: " << std::numeric_limits<float>::min() << std::endl;
     std::cout << "Maximum value for float: " << std::numeric_limits<float>::max() << std::endl;
+
     std::cout << "Minimum value for double: " << std::numeric_limits<double>::min() << std::endl;
     std::cout << "Maximum value for double: " << std::numeric_limits<double>::max() << std::endl;
 
