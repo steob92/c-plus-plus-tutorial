@@ -4,8 +4,8 @@
 
 int main() {
 
-        // int - 4-byte integer (minimum/maximum values):
-    int a = 42;
+    // int - 4-byte integer (minimum/maximum values):
+    // Define an integer a and print it to the screen
     std::cout << "integer a = " << a << std::endl;
     std::cout << "Minimum value for int: " << std::numeric_limits<int>::min() << std::endl;
     std::cout << "Maximum value for int: " << std::numeric_limits<int>::max() << std::endl;
@@ -13,12 +13,14 @@ int main() {
 
     // Precision of float and double:
     std::cout.precision(20);
-    float b = 3.14159265358979323846;
+    // Define a float b with the value of pi : 3.14159265358979323846
     std::cout << "float b = \t" << b << std::endl;
 
-    double c = 3.14159265358979323846;
+    // Define a double c with the value of pi : 3.14159265358979323846
     std::cout << "double c = \t" << c << std::endl;
     std::cout << "Full      \t" << "3.14159265358979323846" << std::endl;
+
+
 
     // Display minimum and maximum values for float and double:
     std::cout << "Minimum value for float: " << std::numeric_limits<float>::min() << std::endl;

@@ -6,29 +6,34 @@ using namespace std;
 int main() {
 
     // Define an array of 6 integers
-    int my_array[6] = {1, 2, 3, 4, 5, 6};
+    // Define an array of lenght 6
+    int my_array
 
-    cout << "The 3rd entry in the array is: " << my_array[2] << endl;
+    // Print out the 3rd entry
+    cout << "The 3rd entry in the array is: " << << endl;
 
+    // Go out of range!
     // Let's see what happens when we go out of bounds on our array
     // This may result in undefined behavior or accessing memory that doesn't belong to the array.
-    cout << "The 7th entry in the array is: " << my_array[6] << endl;
+
+    cout << "The 7th entry in the array is: " << << endl;
 
     // Read in a value and use that value to set the size of the array
     int my_array_size;
 
+    // Take user input to get the size of an array
     cout << "What is the size of the array: ";
     cin >> my_array_size;
 
     // Dynamically allocate an array
-    // int *my_custom_array = new int[my_array_size];
-
+    
     // Better to allocate an array using std::vector
     // std::vector is a safer and more flexible alternative to dynamic arrays.
-    vector<int> my_custom_vector(my_array_size);
-
+    // Create a vector of custom length
+    
+    // Asign the value i^2 to each element
     for (int i = 0; i < my_array_size; i++) {
-        my_custom_vector[i] = i * i;
+
         cout << i << " " << my_custom_vector[i] << endl;
     }
 
@@ -44,10 +49,10 @@ int main() {
     // Use std::vector to avoid manual memory management and potential issues.
     
     // We can also dynamically expand vectors
-    vector<int> my_empty_vector;
+    // create and empty vector
 
     for (int i = 0; i < my_array_size; i++) {
-        my_empty_vector.push_back(i * i);
+        // add a new  element of value i at the end of the vector
         cout << i << " " << my_empty_vector[i] << endl;
     }
 
@@ -55,9 +60,9 @@ int main() {
 
     // With vectors we can also resize as is needed
     cout << "The size of our vector is: " << my_empty_vector.size() << endl;
-    my_empty_vector.resize(100);
+    // Resize to size 100
     cout << "The size of our vector is: " << my_empty_vector.size() << endl;
-    my_empty_vector.resize(1);
+    // Resize to size 1
     cout << "The size of our vector is: " << my_empty_vector.size() << endl;
     
 
@@ -65,8 +70,8 @@ int main() {
 
     // We can make multi-dimensional vectors too
     // This creates a 10x10 vector of integers with the default value 42
-    vector<vector<int>> multi_dim_vector(10, vector<int>(10, 42));
-
+    // Create a 10x10 vector with a default value 42
+    
     cout << "Size of vector: " << multi_dim_vector.size() << endl;
     cout << "Size of vector [" << multi_dim_vector.size() - 1 << "]: " << multi_dim_vector[multi_dim_vector.size() - 1].size() << endl;
     cout << "Value at [" << multi_dim_vector.size() - 1 << "][" << multi_dim_vector[multi_dim_vector.size() - 1].size() - 1 << "]: "

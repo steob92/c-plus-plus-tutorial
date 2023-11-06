@@ -3,8 +3,9 @@
 using namespace std;
 
 int main() {
-    int a = 123;
-    int b = 456;
+    
+    // Define int a and b
+    
     
     cout << "a is " << a << endl;
     cout << "b is " << b << endl;
@@ -16,10 +17,10 @@ int main() {
         // Here, we are "shadowing" the variable named 'a'.
         // Within the nested scope, we have a new 'a', which temporarily hides the outer 'a'.
         // This is allowed, but it can lead to confusion and is generally considered poor practice.
-        int a = 43;  // Shadowing the outer 'a'
+
+        // Shadow a
         
         // The variable 'c' is created locally within this scope.
-        int c = 789;
         
         cout << "a is " << a << endl;    // Refers to the 'a' in the nested scope
         cout << "b is " << b << endl;    // Accesses the outer 'b'

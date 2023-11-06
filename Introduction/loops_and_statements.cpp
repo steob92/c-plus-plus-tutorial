@@ -15,31 +15,25 @@ int main() {
 
     // Gather the user's guess
     int guess;
-    cout << "Guess the number: ";
-    cin >> guess;
+    // Use cin to gather the user's input
 
     // Check if the guess is correct or not
-    if (guess == random_int) {
+    // Write if/else if/else statements to check if the guess is correct, too high or too low
+    
         cout << "Correct!" << endl;
-    } else if (guess < random_int) {
         cout << "Too Low! The number was " << random_int << endl;
-    } else {
         cout << "Too High! The number was " << random_int << endl;
-    }
-
+    
     // Example of a for loop
+    // Count from 0 -9
     cout << "Counting... " << endl;
-    for (int i = 0; i < 10; i++) {
         cout << i << " ";
 
         // Skip when i == 3
-        if (i != 3) {
+            // When we're not at i ==3 count backwards form i to 0
             // Counting backward
-            for (int j = i - 1; j >= 0; j--) {
+                // Skip when we're on 7
                 // Use continue to skip to the end of the current iteration
-                if (j == 7) {
-                    continue;
-                }
                 cout << j << " ";
             }
         }
@@ -47,23 +41,24 @@ int main() {
     }
 
     // Example of a while loop
-    int counter = 0;
+    // Write a while loop to loop over a count from 0 - 9
     cout << "While counter" << endl;
-    while (counter < 10) {
         counter += 1;
         cout << "..." << counter << endl;
-    }
 
     // Example of a do-while loop
+    // Do the same with a do-while loop
     counter = 0;
     cout << "Do while counter" << endl;
 
-    do {
         cout << "count: " << counter << endl;
         counter += 1;
-    } while (counter < 10);
+
+
 
     // Create an infinite loop with a break statement
+    // Write an inifite loop that will add 2 to our counter and exit when we go above 20
+    // Use a break statement
     counter = 0;
     cout << "Count up" << endl;
     while (true) {
@@ -71,21 +66,16 @@ int main() {
         cout << "..." << counter << endl;
 
         // Break out of the loop if counter exceeds 20
-        if (counter > 20) {
-            break;
-        }
 
         // Use break to exit the inner while loop, but not the outer loop
         int x = 0;
+        // Start counting up in x by 1. Break this whole loop when x goes above 3
         while (true) {
             cout << "->" << x;
             x++;
 
             // Break out of the inner while loop when x exceeds 3
-            if (x > 3) {
-                cout << endl;
-                break;
-            }
+
         }
 
         cout << "Back in the parent loop" << endl;
